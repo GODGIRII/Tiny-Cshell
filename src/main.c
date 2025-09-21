@@ -15,7 +15,8 @@ int main(int argc, char *argv[]){
         if (fgets(input, PACSH_INPUT,stdin) == NULL) {
             break;
         }
-
     }
+
+
 }
 
