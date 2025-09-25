@@ -7,7 +7,7 @@
 #define PACSH_INPUT 1024
 #define PACSH_TOK_DELIM " \t\r\n\a"
 
-int pacsh_cd(char **args);
+/*int pacsh_cd(char **args);
 int pacsh_help(char **args);
 int pacsh_ls(char **args);
 int pacsh_exit(char **agrs);
