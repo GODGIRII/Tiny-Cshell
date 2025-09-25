@@ -13,21 +13,21 @@ int pacsh_ls(char **args);
 int pacsh_exit(char **agrs);
 int pacsh_grep(char **args);
 
-int main(char argc, int agrv[]) {
+int main(int argc, char *agrv[]) {
     char input[PACSH_INPUT];
 
     while (1) {
-        printf("> "); // prompt
+        printf("> "); 
 
         if (fgets(input, PACSH_INPUT, stdin) == NULL) {
-            break; // Ctrl+D exits
+            break; 
         }
 
         input[strcspn(input, "\n")] = 0;
 
         printf(" : %s\n", input);
 
-        if (strcmp(input, "exit") == 0) {
+        if (strcmp(input "exit") == 0) {
             break;
         }
     }
